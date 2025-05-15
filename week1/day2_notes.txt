@@ -1,0 +1,36 @@
+
+Models:
+
+    Frontier Models.
+
+    LLM's pioneering models, usually largest and closed source sometimes refer to the strongest opensource.
+
+    - OpenAI
+    - Claude (Data Scientist favoured)
+    - Gemmini (Google)
+    - CommnadR (Cohere)
+    - Perplexity (Search Engine + model)
+
+    Open Source:
+    - Llama (Meta)
+    - Mixtral (Mistral, mixutre of experts model)
+    - Qwen (Alibaba Cloud)
+    - Gemma (Google)
+    - Phi (Microsoft)
+
+
+    Three ways to use a models:
+
+    [Chat interfaces]
+        'ChatGpt' 
+
+    [Cloud API]
+    LLM API, such as OpenAI API
+    Langchain framework, one unified API
+        - just uses individual API's underneath
+    Managed services like amazon bedrock, google vertex, azure ML
+
+    [Direct]
+    Code + weights 
+    With HuggingFace transformer libraries
+    Ollama running locally
