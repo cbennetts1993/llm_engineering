@@ -1,0 +1,14 @@
+
+
+Which LLM should i use?
+
+    Depends on the problems requirements.
+    
+    ChatGPT - conversational
+    Claude - Literal, data, specific. prefered by many.
+    Meta/Ollama - OK but lower power
+    Perplexity - Search engine, got the how many "a" question
+    correct.
+
+
+    

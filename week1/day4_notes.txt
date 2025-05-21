@@ -1,0 +1,96 @@
+
+Transformer Architecture
+    
+    2017 - Google published Trnasformer architecture - "Attention
+    is all you need"
+    
+    2018 - GPT-1 / BERT
+    
+    2019 - GPT-2
+    
+    2020 - GPT-3
+    
+    2022 - ChatGPT and RLHF (Reinforcement Learning from Human
+    Feedback)
+    
+    2024 - GPT-4o
+    
+    
+    "Emergent Intelligence" - coming from scale of predictive
+    modeling
+
+
+    Prompt Engineering - prompting for best results
+    Custom GPTs - custom data training
+    Copilots - code assistants, planners etc.
+    Agentization - Autonomy and specialization, planning tasks.
+
+Parameters / Weights
+    Has grown logarithmically
+
+    GPT 1 - 117M
+    GPT 2 - 1.5B
+    GPT 3 - 175B
+    GPT 4 - 1.76T
+
+    Latest model somewhere around 10 trillion
+
+    Opensource:
+    Gemma - 2B
+    Llama 3.1 8 / 70 / 405 B variants
+    Mixtral 140B
+
+
+Tokenization
+
+    units passed into a model
+
+    Early neural networks trained character by character - limited input and managable vocabulary size.
+    Challenge: so much required understanding of composition of words to be captured in weights.
+
+Neural networks trained off each word, building the "vocab" of words and transforming into tokens.
+    Challenge: Enormous sizes of vocabs due to unknown words, rarites etc.
+
+Breakthrough was to work on 'chunks' of words (Morphemes?)
+due to tokenization, can handle place names etc. and good at handling word stems, like noun -> verb transitions.
+
+GPT Tokenizer
+- for common words, maps 1 word -> 1 token
+- for uncommon words, more breakdown of tokens.
+- Breaks (grammar) important in tokenization.
+
+GPT long numbers tokenized to 3 digit sequences. 
+
+Rule of Thumb - 1 token maps to ~4 characters (English), 1000 tokens ~ 750 words.
+
+
+
+CONTEXT WINDOW
+
+- total number of tokens an llm can consider when genreating the next token.
+
+Includes the original input (system) prompt, subsequent converstation and the latest (user) prompts. 
+
+This governs how well the model can remember or reference previous content.
+
+"Memory" is an illusion - every time you talk to ChatGPT - every input is put in as a prompt.
+
+
+MODEL API COSTS
+
+Chat interfaces have "Pro plans" but no pre useage charge.
+API's have no subscription but a charge per call.
+Cost based on the number of  input tokens and output tokens.
+Total costs very low for individual calls - large systems scale to higher costs.
+
+
+VELLUM - ranking and comparing llms.
+- developed the birds:feather fish: scale question.
+
+compares context windows with costs of frontier models.
+useful when considering business application costs.
+
+Gemini 1.5 Flash - 1M tokens!!!
+~ 750,000 words
+nearly the complete works of shakespeare!
+
