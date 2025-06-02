@@ -1,0 +1,12 @@
+
+
+## Add to API use for anthropic, Gemini, etc.
+
+Week 2 -
+Frontier models with UIs,
+Agentization and multi-modality.
+
+
+
+LLM memory - illusion
+Each time user input added, the whole conversation history is added as part of the prompt.
